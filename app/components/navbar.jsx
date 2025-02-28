@@ -1,11 +1,12 @@
 import Link from "next/link";
-import Image from "next/image";
+
+import { Logo } from "./logo";
 
 export function Navbar() {
   return (
     <>
       <div className="flex justify-center mb-4">
-        <Image src="/imagenes/logo.png" alt="Logo" width={150} height={150} />
+        <Logo alt="Logo" width={150} height={150} />
       </div>
 
       <header className="flex justify-center bg-black">
@@ -44,7 +45,7 @@ export function Navbar() {
           focus:text-gray-300 focus:outline-none 
           dark:text-white dark:hover:text-gray-400 dark:focus:text-gray-400"
           >
-            Acerca de
+            Sobre nosotros
           </Link>
         </nav>
       </header>
