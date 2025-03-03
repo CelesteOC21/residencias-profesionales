@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <div className="Contenedor-Slider">
-        <span>Elegancia, Lujo y Calidad: La Esencia de Nuestro Trabajo.</span>
+        <span className="drop-shadow-[3px_3px_3px_rgba(0,0,0,0)]">La Esencia de Nuestro Trabajo.</span>
         <Slider />
       </div>
     </>

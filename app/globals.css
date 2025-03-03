@@ -67,9 +67,11 @@
   }
 }
 /*
+/* 
 ESTILOS PARA EL CARRUSEL
 =======================
 */
+
 .image-auto {
   width: 100%; /* El ancho se ajustará al 100% del contenedor */
   height: 100%;
@@ -87,32 +89,17 @@ ESTILOS PARA EL CARRUSEL
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-image: url("/imagenes/patrondefondo.png");
-  background-size: cover;
-  background-repeat: repeat-x;
-  animation: moverFondo 40s linear infinite;
 }
 .Contenedor-Slider span {
   width: 100%;
   text-align: center;
-  margin-top: 18px;
-  color: #fafafa;
+  margin-top: 4rem;
+  color: #000000;
   border-style: none;
-  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.504); /* Sombra difuminada */
   font-size: 2rem;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.429);
-}
-/*Esta animación permite la transición del fondo del contenedor del slider de forma que el patron parezca infinito*/
-@keyframes moverFondo {
-  from {
-    background-position: inherit;
-  }
-  to {
-    background-position: -1865px 0; /* Mueve la imagen de fondo de forma que en cierta posicion no se note el reinicio subito de la animación */
-  }
 }
 /*
 FIN DE ESTILOS PARA EL CARRUSEL
 =======================
-*/
+ */
