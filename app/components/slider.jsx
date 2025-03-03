@@ -11,25 +11,36 @@ import {
 
 export function Slider() {
   //Este arreglo contendra las rutas de las imagenes que mostrara el carrusel
-  var Imagenes = [1, 2, 3, 4, 5, 6];
+  var Imagenes = [
+    "/imagenes/carrusel/Imagen1.jpg",
+    "/imagenes/carrusel/Imagen2.jpg",
+    "/imagenes/carrusel/Imagen3.jpg",
+    "/imagenes/carrusel/Imagen4.jpg",
+    "/imagenes/carrusel/Imagen5.jpg",
+  ];
   return (
     <Carousel
       //Esta propiedad opts nos permite agregar atributos de disposicion, comportamiento y clases a un componente en este caso al Carousel
       opts={{
         //Las cards dentro del carrusel tendran una alineación al principio desde la izquierda
         align: "start",
+        loop: true,
       }}
-      className="w-full max-w-sm"
+      className="w-full TamañoCarrusel"
     >
       <CarouselContent>
         {Imagenes.map((imagen, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem key={index} className="basis-1/2 basis-1/3">
             <div className="p-1">
               <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span>
-                    {index + 1}, {imagen}
-                  </span>
+                <CardContent className="flex aspect-square items-center justify-center p-1">
+                  <Image
+                    alt="Carrusel"
+                    src={imagen}
+                    width={800}
+                    height={800}
+                    className="image-auto"
+                  />
                 </CardContent>
               </Card>
             </div>
