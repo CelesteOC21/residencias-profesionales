@@ -14,6 +14,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  console.log("test");
   return (
     <html lang="en">
       <body className={`${montserrat.className} antialiased`}>
