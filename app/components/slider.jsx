@@ -9,15 +9,16 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+//Este arreglo contendra las rutas de las imagenes que mostrara el carrusel
+const Imagenes = [
+  "/imagenes/carrusel/Imagen1.jpg",
+  "/imagenes/carrusel/Imagen2.jpg",
+  "/imagenes/carrusel/Imagen3.jpg",
+  "/imagenes/carrusel/Imagen4.jpg",
+  "/imagenes/carrusel/Imagen5.jpg",
+];
+
 export function Slider() {
-  //Este arreglo contendra las rutas de las imagenes que mostrara el carrusel
-  var Imagenes = [
-    "/imagenes/carrusel/Imagen1.jpg",
-    "/imagenes/carrusel/Imagen2.jpg",
-    "/imagenes/carrusel/Imagen3.jpg",
-    "/imagenes/carrusel/Imagen4.jpg",
-    "/imagenes/carrusel/Imagen5.jpg",
-  ];
   return (
     <Carousel
       //Esta propiedad opts nos permite agregar atributos de disposicion, comportamiento y clases a un componente en este caso al Carousel
@@ -30,7 +31,7 @@ export function Slider() {
     >
       <CarouselContent>
         {Imagenes.map((imagen, index) => (
-          <CarouselItem key={index} className="basis-1/2 basis-1/3">
+          <CarouselItem key={index} className="basis-1/3">
             <div className="p-1">
               <Card>
                 <CardContent className="flex aspect-square items-center justify-center p-1">
