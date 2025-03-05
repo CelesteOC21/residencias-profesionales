@@ -15,8 +15,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${montserrat.className} antialiased`}>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${montserrat.className} antialiased `}>
         <Navbar />
         {children}
         <Footer />
