@@ -12,7 +12,7 @@ export function Navbar() {
       <header className="flex justify-center bg-black">
         <nav className="flex gap-6">
           <Link
-            href="#"
+            href="/"
             className="group inline-flex h-9 items-center justify-center rounded-md  px-4 py-2 text-base font-medium transition-colors 
           text-white hover:text-gray-300 
           focus:text-gray-300 focus:outline-none 
@@ -39,7 +39,7 @@ export function Navbar() {
             Galería
           </Link>
           <Link
-            href="#"
+            href="#About"
             className="group inline-flex h-9 items-center justify-center rounded-md  px-4 py-2 text-base font-medium transition-colors 
           text-white hover:text-gray-300 
           focus:text-gray-300 focus:outline-none 
