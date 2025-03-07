@@ -1,0 +1,99 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Categoria {
+  id        Int        @id @default(autoincrement())
+  nombre    String
+  Inmuebles Inmueble[]
+}
+
+model Inmueble {
+  id                  Int                   @id @default(autoincrement())
+  nombre              String
+  descripcion         String
+  precio              Float
+  imagen              String
+  stock               Int
+  categoria           Categoria             @relation(fields: [fk_id_categoria], references: [id])
+  fk_id_categoria     Int
+  DetallesRequisicion DetallesRequisicion[]
+  Movimientos         Movimiento[]
+}
+
+model Requisicion {
+  id                     Int                   @id @default(autoincrement())
+  cliente                String
+  contacto               String
+  fecha_renta            DateTime
+  lugar                  String
+  fecha_entrega          DateTime
+  fecha_devolucion       DateTime
+  responsable_entrega    String
+  responsable_devolucion String
+  estatus                Estatus
+  DetallesRequisicion    DetallesRequisicion[]
+}
+
+enum Estatus {
+  pendiente
+  confirmada
+  concluida
+}
+
+model DetallesRequisicion {
+  id                Int         @id @default(autoincrement())
+  cantidad          Int
+  requisicion       Requisicion @relation(fields: [fk_id_requisicion], references: [id])
+  fk_id_requisicion Int
+  inmueble          Inmueble    @relation(fields: [fk_id_inmueble], references: [id])
+  fk_id_inmueble    Int
+}
+
+model Usuario {
+  id          Int          @id @default(autoincrement())
+  nombre      String
+  telefono    BigInt
+  correo      String
+  rol         String
+  usuario     String
+  clave       String
+  Movimientos Movimiento[]
+}
+
+model TipoMovimiento {
+  id                  Int    @id @default(autoincrement())
+  renta               String
+  entrada             String
+  insidencia_perdida  String
+  insidencia_prestamo String
+}
+
+model Movimiento {
+  id              Int                @id @default(autoincrement())
+  tipo_movimiento TipoMovimientoEnum
+  fecha           DateTime
+  motivo          String
+  inmueble        Inmueble           @relation(fields: [fk_id_inmueble], references: [id])
+  fk_id_inmueble  Int
+  usuario         Usuario            @relation(fields: [fk_id_usuario], references: [id])
+  fk_id_usuario   Int
+}
+
+enum TipoMovimientoEnum {
+  renta
+  entrada
+  incidencia_perdida
+  incidencia_prestamo
+}
