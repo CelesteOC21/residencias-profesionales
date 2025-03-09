@@ -61,12 +61,18 @@ model DetallesRequisicion {
   fk_id_inmueble    Int
 }
 
+enum Rol {
+  administrador
+  almacenista
+  asistente
+}
+
 model Usuario {
   id          Int          @id @default(autoincrement())
   nombre      String
   telefono    BigInt
   correo      String
-  rol         String
+  rol         Rol          @default(administrador)
   usuario     String
   clave       String
   Movimientos Movimiento[]

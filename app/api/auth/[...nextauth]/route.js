@@ -31,6 +31,21 @@ const authOptions = {
       },
     }),
   ],
+  callbacks: {
+    async jwt({ token, user }) {
+      if (user) {
+        token.id = user.id;
+        token.name = user.nombre;
+        token.email = user.correo;
+        token.rol = user.rol;
+      }
+      return token;
+    },
+    async session({ session, token }) {
+      session.user = token;
+      return session;
+    },
+  },
   pages: {
     signIn: "/auth/login",
     signOut: "/",
