@@ -20,10 +20,7 @@ const sobreNosotros = [
 export function AboutUs() {
   return (
     <>
-      <div
-        className=" flex justify-center font-semibold text-3xl pb-10 pt-10"
-        id="acerca-de"
-      >
+      <div className=" flex justify-center font-semibold text-3xl pb-10 pt-10">
         <h1>Sobre nosotros</h1>
       </div>
 
