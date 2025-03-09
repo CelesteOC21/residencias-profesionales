@@ -6,13 +6,14 @@ import { Catalogo } from "./components/catalogo";
 export default function Home() {
   return (
     <>
-      <Portada />
       <div className="Contenedor-Slider">
         <span className="drop-shadow-[3px_3px_3px_rgba(0,0,0,0)]">
           La esencia de nuestro trabajo
         </span>
         <Slider />
       </div>
+      <Portada />
+
       <Catalogo />
       <AboutUs />
     </>
