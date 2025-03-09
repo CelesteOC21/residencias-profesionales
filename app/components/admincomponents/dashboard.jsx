@@ -24,7 +24,7 @@ import { Slider } from "../homecomponents/slider";
 // Menu items.
 const items = [
   {
-    title: "home",
+    title: "Home",
     url: "#",
     icon: Home, // Cambiar el icono
   },

@@ -23,12 +23,12 @@ const items = [
   },
   {
     title: "Eventos",
-    url: "/Almacenista/Eventos",
+    url: "/almacenista/eventos",
     icon: Calendar, // Cambiar el icono
   },
   {
     title: "Inventario",
-    url: "/Almacenista/Inventario",
+    url: "/almacenista/inventario",
     icon: Box, // Cambiar el icono
   },
 ];
