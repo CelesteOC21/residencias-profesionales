@@ -1,8 +1,8 @@
 "use client";
-import { AboutUs } from "./components/about-us";
-import { Slider } from "./components/slider";
-import { Catalogo } from "./components/catalogo";
 
+import { AboutUs } from "../components/homecomponents/about-us";
+import { Catalogo } from "../components/homecomponents/catalogo";
+import { Slider } from "../components/homecomponents/slider";
 
 export default function Home() {
   return (
