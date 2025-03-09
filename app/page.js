@@ -21,7 +21,7 @@ function Portada() {
   return (
     <>
       <div className="bg-[url(/imagenes/Ejemplo.jpg)] bg-cover h-auto w-full flex flex-row justify-between shadow-lg shadow-black-500/50">
-        <div className="text-white p-10 w-1/2 text-[100px] italic bg-zinc-500/20 backdrop-brightness-50 ">
+        <div className="text-white p-10 w-1/2 text-[85px] italic bg-zinc-500/20 backdrop-brightness-50 ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </div>
       </div>
