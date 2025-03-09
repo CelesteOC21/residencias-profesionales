@@ -22,23 +22,13 @@ const items = [
     icon: Home, // Cambiar el icono
   },
   {
-    title: "Cotizaciones",
-    url: "/Admin/Cotizaciones",
-    icon: FileText, // Cambiar el icono
-  },
-  {
     title: "Eventos",
-    url: "/Admin/Eventos",
+    url: "/Almacenista/Eventos",
     icon: Calendar, // Cambiar el icono
   },
   {
-    title: "Usuarios",
-    url: "/Admin/Usuarios",
-    icon: Users, // Cambiar el icono
-  },
-  {
     title: "Inventario",
-    url: "/Admin/Inventario",
+    url: "/Almacenista/Inventario",
     icon: Box, // Cambiar el icono
   },
 ];
@@ -48,7 +38,7 @@ export function AppSidebar() {
     <Sidebar variant="floating" className="bg-black rounded-r-lg shadow-xs">
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Bienvenido Administrador</SidebarGroupLabel>
+          <SidebarGroupLabel>Bienvenido Almacenista</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (

@@ -1,6 +1,6 @@
 import { Montserrat } from "next/font/google";
 import "../globals.css";
-import { AppSidebar } from "../components/admincomponents/dashboard";
+import { AppSidebar } from "../components/almacenistacomponents/dashboard";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 const montserrat = Montserrat({
   subsets: ["latin"],

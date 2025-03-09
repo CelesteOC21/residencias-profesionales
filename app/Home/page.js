@@ -1,6 +1,6 @@
-import { AboutUs } from "./components/about-us";
-import { Slider } from "./components/slider";
-import { Catalogo } from "./components/catalogo";
+import { AboutUs } from "../components/homecomponents/about-us";
+import { Slider } from "../components/homecomponents/slider";
+import { Catalogo } from "../components/homecomponents/catalogo";
 
 export default function Home() {
   return (
