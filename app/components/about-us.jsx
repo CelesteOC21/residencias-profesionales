@@ -14,7 +14,7 @@ const sobreNosotros = [
   {
     title: "Valores",
     description:
-      "Honestidad, Confiable, Solidaridad, Respeto, Compromiso, Pasión, Cultura de servicio, Calidad ",
+      "Honestidad, Confiable, Solidaridad, Respeto, Compromiso, Pasión, Cultura de servicio, Calidad",
   },
 ];
 export function AboutUs() {

@@ -28,6 +28,7 @@ export function Slider() {
         loop: true,
       }}
       className="w-full TamañoCarrusel"
+      id="galeria"
     >
       <CarouselContent>
         {Imagenes.map((imagen, index) => (
