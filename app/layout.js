@@ -2,6 +2,8 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Footer } from "./components/footer";
 import { Navbar } from "./components/navbar";
+import { Toaster } from "@/components/ui/sonner";
+import { Providers } from "@/components/ui/providers";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -15,11 +17,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${montserrat.className} antialiased `}>
-        <Navbar />
-        {children}
-        <Footer />
+    <html lang="en">
+      <body className={`${montserrat.className} antialiased`}>
+        <Providers>
+          <Navbar />
+          {children}
+          <Toaster />
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

@@ -1,3 +1,4 @@
+"use client";
 import { AboutUs } from "./components/about-us";
 import { Slider } from "./components/slider";
 import { Catalogo } from "./components/catalogo";
