@@ -103,3 +103,19 @@ ESTILOS PARA EL CARRUSEL
 FIN DE ESTILOS PARA EL CARRUSEL
 =======================
  */
+
+.Contenedor-Catalogos {
+  background-image: url("/imagenes/patrondefondo.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  animation: moverFondo 100s linear infinite;
+}
+/*Esta animación permite la transición del fondo del contenedor del slider de forma que el patron parezca infinito*/
+@keyframes moverFondo {
+  from {
+    background-position: inherit;
+  }
+  to {
+    background-position: -1865px 0; /* Mueve la imagen de fondo de forma que en cierta posicion no se note el reinicio subito de la animación */
+  }
+}

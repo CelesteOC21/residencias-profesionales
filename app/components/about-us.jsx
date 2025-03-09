@@ -14,13 +14,16 @@ const sobreNosotros = [
   {
     title: "Valores",
     description:
-      "Honestidad, Confiable, Solidaridad, Respeto, Compromiso, Pasión, Cultura de servicio, Calidad ",
+      "Honestidad, Confiable, Solidaridad, Respeto, Compromiso, Pasión, Cultura de servicio, Calidad",
   },
 ];
 export function AboutUs() {
   return (
     <>
-      <div className=" flex justify-center font-semibold text-3xl pb-10 pt-10">
+      <div
+        className=" flex justify-center font-semibold text-3xl pb-10 pt-10"
+        id="About"
+      >
         <h1>Sobre nosotros</h1>
       </div>
 
