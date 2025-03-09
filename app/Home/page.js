@@ -3,6 +3,7 @@ import { AboutUs } from "./components/about-us";
 import { Slider } from "./components/slider";
 import { Catalogo } from "./components/catalogo";
 
+
 export default function Home() {
   return (
     <>
