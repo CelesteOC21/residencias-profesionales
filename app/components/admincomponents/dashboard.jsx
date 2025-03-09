@@ -24,33 +24,33 @@ import { Slider } from "../homecomponents/slider";
 // Menu items.
 const items = [
   {
-    title: "Home",
+    title: "home",
     url: "#",
     icon: Home, // Cambiar el icono
   },
   {
     title: "Cotizaciones",
-    url: "/Admin/Cotizaciones",
+    url: "/admin/cotizaciones",
     icon: FileText, // Cambiar el icono
   },
   {
     title: "Eventos",
-    url: "/Admin/Eventos",
+    url: "/admin/eventos",
     icon: Calendar, // Cambiar el icono
   },
   {
     title: "Usuarios",
-    url: "/Admin/Usuarios",
+    url: "/admin/usuarios",
     icon: Users, // Cambiar el icono
   },
   {
     title: "Inventario",
-    url: "/Admin/Inventario",
+    url: "/admin/inventario",
     icon: Box, // Cambiar el icono
   },
   {
     title: "Landing Page",
-    url: "/Admin",
+    url: "/admin",
     icon: LayoutPanelTop, // Cambiar el icono
   },
 ];
