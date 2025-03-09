@@ -1,5 +1,12 @@
 "use client";
-import { Home, FileText, Calendar, Users, Box } from "lucide-react";
+import {
+  Home,
+  FileText,
+  Calendar,
+  Users,
+  Box,
+  LayoutPanelTop,
+} from "lucide-react";
 import { NavUser } from "./collapsedmenu";
 import {
   Sidebar,
@@ -40,6 +47,11 @@ const items = [
     title: "Inventario",
     url: "/Admin/Inventario",
     icon: Box, // Cambiar el icono
+  },
+  {
+    title: "Landing Page",
+    url: "/Admin",
+    icon: LayoutPanelTop, // Cambiar el icono
   },
 ];
 
