@@ -45,10 +45,12 @@ const items = [
 
 export function AppSidebar() {
   return (
-    <Sidebar variant="floating" className="bg-black rounded-r-lg shadow-xs">
+    <Sidebar variant="sidebar" className="shadow-xs">
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Bienvenido Administrador</SidebarGroupLabel>
+          <SidebarGroupLabel className="font-bold text-black">
+            Bienvenido Administrador
+          </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
