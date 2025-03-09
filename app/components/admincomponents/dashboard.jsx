@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react";
+import { Home, FileText, Calendar, Users, Box, LogOut } from "lucide-react";
 
 import {
   Sidebar,
@@ -16,38 +16,38 @@ const items = [
   {
     title: "Home",
     url: "#",
-    icon: Home,
+    icon: Home, // Cambiar el icono
   },
   {
     title: "Cotizaciones",
-    url: "#",
-    icon: Inbox,
+    url: "/Admin/Cotizaciones",
+    icon: FileText, // Cambiar el icono
   },
   {
     title: "Eventos",
-    url: "#",
-    icon: Calendar,
+    url: "/Admin/Eventos",
+    icon: Calendar, // Cambiar el icono
   },
   {
     title: "Usuarios",
-    url: "#",
-    icon: Search,
+    url: "/Admin/Usuarios",
+    icon: Users, // Cambiar el icono
   },
   {
     title: "Inventario",
-    url: "#",
-    icon: Search,
+    url: "/Admin/Inventario",
+    icon: Box, // Cambiar el icono
   },
   {
     title: "Cerrar Sesion",
     url: "#",
-    icon: Settings,
+    icon: LogOut, // Cambiar el icono
   },
 ];
 
 export function AppSidebar() {
   return (
-    <Sidebar variant="floating">
+    <Sidebar variant="floating" className="bg-black rounded-r-lg shadow-xs">
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Bienvenido Administrador</SidebarGroupLabel>
