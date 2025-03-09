@@ -5,15 +5,15 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Logo } from "@/app/components/logo";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
+
+import { toast } from "sonner";
 
 export default function Login() {
   const router = useRouter();
@@ -32,7 +32,7 @@ export default function Login() {
     });
 
     if (res.error) {
-      alert(res.error);
+      toast.error(res.error, { position: "top-center" });
     } else {
       router.push("/");
     }
@@ -111,7 +111,6 @@ export default function Login() {
             </Button>
           </form>
         </CardContent>
-        <CardFooter className="flex justify-center"></CardFooter>
       </Card>
     </div>
   );

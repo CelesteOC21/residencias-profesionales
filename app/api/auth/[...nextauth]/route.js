@@ -17,11 +17,10 @@ const authOptions = {
           where: { correo: credentials.email },
         });
 
-        if (!user) throw new Error("Usuario no encontrado");
-        console.log(user);
+        if (!user) throw new Error("Credenciales incorrectas");
 
         const isMatch = await matchPassword(credentials.password, user.clave);
-        if (!isMatch) throw new Error("Clave incorrecta");
+        if (!isMatch) throw new Error("Credenciales incorrectas");
 
         return {
           id: user.id,
