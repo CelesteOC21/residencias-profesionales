@@ -24,18 +24,13 @@ import { Slider } from "../homecomponents/slider";
 // Menu items.
 const items = [
   {
-    title: "Home",
-    url: "#",
-    icon: Home, // Cambiar el icono
-  },
-  {
     title: "Cotizaciones",
-    url: "/admin/cotizaciones",
+    url: "/Admin/Cotizaciones",
     icon: FileText, // Cambiar el icono
   },
   {
     title: "Eventos",
-    url: "/admin/eventos",
+    url: "/Admin/Eventos",
     icon: Calendar, // Cambiar el icono
   },
   {
